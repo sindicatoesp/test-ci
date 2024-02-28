@@ -12,3 +12,6 @@ This build will produce error, see actions tab for more information.
 * See resources limit, storage and minutes quota for more information <https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions>
 * Markdown link rules, see URL for more information <https://github.com/updownpress/markdown-lint/tree/master>
 * Guides for GitHub Actions, see URL for more information <https://docs.github.com/en/actions/guides>
+* Guides for Artifcact creation, see URLs below to more information
+** upload-pages-artifact <https://github.com/actions/upload-pages-artifact>
+** @actions/upload-artifact <https://github.com/actions/upload-pages-artifact>

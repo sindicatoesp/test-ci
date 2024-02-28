@@ -68,29 +68,13 @@ jobs:
         run: |
           tar -czvf output.tar.gz ./*.md
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Upload Artifact
+        id: upload-artifact
+        uses: actions/upload-artifact@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v1.0.0
-          release_name: Release ${{ github.ref }}
-          name: Name of this release
-          body: |
-            Changes in this Release
-            - ticket 1
-            - ticket 2
-          draft: false
-          prerelease: false
+          name: my-artifact
+          overwrite: true
+          path: ./output.tar.gz
 
-      - name: Upload Release Asset
-        id: upload-release-asset 
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./output.tar.gz
-          asset_name: output.tar.gz
-          asset_content_type: application/gzip
