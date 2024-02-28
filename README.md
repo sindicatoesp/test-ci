@@ -10,3 +10,5 @@ This build will produce error, see actions tab for more information.
 
 ## Resources
 * See resources limit, storage and minutes quota for more information <https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions>
+* Markdown link rules, see URL for more information <https://github.com/updownpress/markdown-lint/tree/master>
+* Guides for GitHub Actions, see URL for more information <https://docs.github.com/en/actions/guides>
