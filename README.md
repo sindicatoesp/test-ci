@@ -9,4 +9,4 @@ This build will produce error, see actions tab for more information.
 
 
 ## Resources
-* See resources limits, storage and minutes quota https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions
+* See resources limit, storage and minutes quota for more information <https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions>
