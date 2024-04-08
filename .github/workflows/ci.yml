@@ -66,7 +66,8 @@ jobs:
 
       - name: Compress files
         run: |
-          tar -czvf output.tar.gz ./*.md
+          mkdir ./output/
+          tar -czvf ./output/output.tar.gz ./*.md
 
       - name: Upload Artifact
         id: upload-artifact
@@ -76,5 +77,5 @@ jobs:
         with:
           name: my-artifact
           overwrite: true
-          path: ./output.tar.gz
+          path: ./output/
 
